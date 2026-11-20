@@ -8,8 +8,12 @@
   function setHeaderHeight() {
     if (sticky) root.style.setProperty('--hdr-h', sticky.offsetHeight + 'px');
   }
+  var isD = header && header.classList.contains('hdr-d');
   function onScroll() {
-    root.classList.toggle('scrolled', header && header.classList.contains('hdr-d') ? window.scrollY > header.offsetHeight - 4 : window.scrollY > 40);
+    var y = window.scrollY, on = root.classList.contains('scrolled');
+    var limit = isD ? header.offsetHeight - 4 : 40;
+    var next = on ? y > limit - 30 : y > limit;
+    if (next !== on) { root.classList.toggle('scrolled', next); setTimeout(setHeaderHeight, 300); }
   }
   window.addEventListener('scroll', onScroll, { passive: true });
   window.addEventListener('resize', setHeaderHeight);
