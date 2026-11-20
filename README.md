@@ -20,7 +20,7 @@ There is no database, server code or build framework. Everything is generated fr
 | `NEWS-GUIDE.md` | Editorial standard and the format for news stories |
 | `.github/workflows/build.yml` | Rebuilds the site on GitHub whenever data or tools change |
 
-Generated files (do not edit by hand): `index.html`, `news/`, `404.html`, `feed.xml`, `sitemap.xml`.
+Generated files (do not edit by hand): `index.html`, `news/`, `scripts/` (forwarding pages for older addresses), `404.html`, `feed.xml`, `sitemap.xml`.
 
 ## Common tasks
 

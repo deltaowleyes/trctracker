@@ -399,6 +399,16 @@ def build_sitemap(news):
     return f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">{body}</urlset>\n'
 
 
+def redirect_page(target):
+    t = esc(target)
+    return f'''<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Moved</title>
+<meta name="robots" content="noindex"><link rel="canonical" href="{SITE}{t}">
+<meta http-equiv="refresh" content="0; url={t}"></head>
+<body><p>This page has moved to <a href="{t}">{t}</a>.</p></body></html>
+'''
+
+
 def write(rel, text):
     p = ROOT / rel
     p.parent.mkdir(parents=True, exist_ok=True)
@@ -432,6 +442,10 @@ def main():
             shutil.rmtree(d)
             print("removed news/" + d.name)
     write("404.html", build_404(counts))
+    # Older addresses (/scripts/...) forward to the matching Call so existing links keep working.
+    write("scripts/index.html", redirect_page("/"))
+    for n in range(1, 95):
+        write(f"scripts/revised-{n:02d}.html", redirect_page(f"/#call-{n}"))
     write("feed.xml", build_feed(news))
     write("sitemap.xml", build_sitemap(news))
 
