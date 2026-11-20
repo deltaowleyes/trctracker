@@ -250,3 +250,55 @@ a.tag:hover{background:var(--gold);color:var(--ink)}
 }
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 .review{font-size:14px;margin-top:20px}
+
+/* D — split badge, progress bar above a sticky menu (A colours) */
+.hdr-d{position:relative;z-index:40;background:#fff}
+.hdr-d .hdr-top{max-width:1440px;margin:0 auto;padding:16px var(--pad) 6px calc(var(--pad) + 156px);display:flex;align-items:center;min-height:64px}
+.hdr-d .hdr-badge{position:absolute;left:var(--pad);bottom:-40px;width:132px;height:132px;z-index:2}
+.hdr-d .hdr-badge img{width:132px;height:132px;display:block;border-radius:50%;background:#fff;box-shadow:0 0 0 5px #fff,0 6px 18px rgba(26,20,20,.14)}
+.hdr-d .hdr-word{text-decoration:none;display:flex;flex-direction:column;line-height:1.02}
+.hdr-d .w-main{font:900 34px var(--display);color:var(--red);letter-spacing:-.01em}
+.hdr-d .w-main span{color:var(--ink)}.hdr-d .w-main em{font-style:normal;color:var(--red)}
+.hdr-d .w-tag{font:italic 700 15px var(--display);color:var(--ink);display:flex;align-items:center;gap:10px}
+.hdr-d .w-tag::before,.hdr-d .w-tag::after{content:"";width:22px;height:3px;border-radius:2px;background:var(--gold)}
+.hdr-d .hdr-progress{max-width:1440px;margin:0 auto;padding:8px var(--pad) 14px calc(var(--pad) + 156px);display:grid;grid-template-columns:auto minmax(160px,1fr) auto;align-items:center;gap:8px 20px;text-decoration:none;color:var(--ink)}
+.hdr-d .hp-head{display:flex;flex-direction:column;line-height:1.2}
+.hdr-d .hp-head b{font:800 15px var(--display);white-space:nowrap}
+.hdr-d .hp-head small{font-size:12px;color:var(--muted);white-space:nowrap}
+.hdr-d .hdr-progress .bar{height:12px;border-radius:6px}
+.hdr-d .hdr-progress:hover .bar{outline:2px solid var(--gold);outline-offset:2px}
+.site-menu{position:sticky;top:0;z-index:30;background:#fff;box-shadow:0 2px 12px rgba(26,20,20,.07);border-bottom:4px solid transparent;border-image:linear-gradient(90deg,var(--red) 0 70%,var(--gold) 70% 100%) 1}
+.menu-row{max-width:1440px;margin:0 auto;height:60px;padding:0 var(--pad) 0 calc(var(--pad) + 156px);display:flex;align-items:center;gap:32px;transition:padding .2s}
+.menu-mark{display:none;flex:none}
+.menu-mark img{width:40px;height:41px;display:block}
+.menu-link{display:flex;align-items:center;height:60px;padding:0 4px;text-decoration:none;font:800 17px var(--display);color:var(--ink);border-bottom:4px solid transparent;margin-bottom:-4px}
+.menu-link:hover{color:var(--red)}
+.menu-link[aria-current]{color:var(--red);border-bottom-color:var(--red)}
+.site-menu .hdr-search{margin-left:auto;height:42px;padding:0 16px;border:1.5px solid var(--line);border-radius:999px;color:var(--muted)}
+.site-menu .hdr-search:hover{border-color:var(--red);color:var(--red)}
+.scrolled .menu-row{padding-left:var(--pad)}
+.scrolled .menu-mark{display:block}
+@media (max-width:1060px){
+  .hdr-d .hdr-progress{grid-template-columns:auto 1fr}
+  .hdr-d .hdr-progress .legend{grid-column:1/-1}
+  .site-menu .hdr-search span{display:none}
+  .site-menu .hdr-search{width:42px;padding:0;justify-content:center}
+}
+@media (max-width:720px){
+  .hdr-d .hdr-top{padding:12px 12px 4px 104px;min-height:52px}
+  .hdr-d .hdr-badge,.hdr-d .hdr-badge img{width:84px;height:84px}
+  .hdr-d .hdr-badge{left:12px;bottom:-26px}
+  .hdr-d .w-main{font-size:24px}.hdr-d .w-tag{font-size:12px}
+  .hdr-d .w-tag::before,.hdr-d .w-tag::after{width:12px}
+  .hdr-d .hdr-progress{padding:6px 12px 10px 104px;gap:4px 10px}
+  .hdr-d .hdr-progress .legend{display:none}
+  .hdr-d .hdr-progress .bar{height:8px}
+  .hdr-d .hdr-progress{grid-template-columns:1fr}
+  .hdr-d .hp-head{flex-direction:row;align-items:baseline;gap:8px;flex-wrap:wrap}
+  .hdr-d .hp-head b{font-size:14px}.hdr-d .hp-head small{font-size:11px}
+  .menu-row{height:56px;padding:0 10px 0 104px;gap:4px}
+  .scrolled .menu-row{padding-left:10px}
+  .menu-mark img{width:34px;height:35px}.scrolled .menu-mark{margin-right:6px}
+  .menu-link{flex:1;justify-content:center;height:56px;font-size:16px}
+  .site-menu .hdr-search{margin-left:4px;width:44px;height:44px}
+}

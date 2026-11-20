@@ -120,8 +120,29 @@ def search_link():
 
 
 def header(active, status_counts):
+    if HEADER == "D":
+        bar = "".join(f'<span class="seg {STATUS_CLASS[s]}" style="flex:{status_counts[s]}"></span>' for s in STATUS_ORDER)
+        legend = "".join(f'<span class="lg"><i class="{STATUS_CLASS[s]}"></i>{status_counts[s]} {s.lower()}</span>' for s in STATUS_ORDER)
+        return f'''<header class="site-header hdr-d">
+<div class="hdr-top">
+<a class="hdr-badge" href="/" aria-label="{esc(NAME)} home"><img src="/assets/brand/badge-300.webp" alt="" width="132" height="132"></a>
+<a class="hdr-word" href="/"><span class="w-main">TRC<span>Tracker</span><em>.ca</em></span><span class="w-tag">Tracking the 94 Calls to Action</span></a>
+</div>
+<a class="hdr-progress" href="/#status" aria-label="{status_counts['Complete']} of 94 Calls complete. See how status is assessed.">
+<span class="hp-head"><b>{status_counts['Complete']} of 94 complete</b><small>Indigenous Watchdog, Oct 1, 2026</small></span>
+<span class="bar" aria-hidden="true">{bar}</span>
+<span class="legend" aria-hidden="true">{legend}</span>
+</a>
+</header>
+<nav class="site-menu" data-sticky aria-label="Main">
+<div class="menu-row">
+<a class="menu-mark" href="/" aria-label="{esc(NAME)} home" tabindex="-1"><img src="/assets/brand/mark.webp" alt="" width="40" height="41"></a>
+{nav_links(active, "menu-link")}
+{search_link()}
+</div>
+</nav>'''
     if HEADER == "B":
-        return f'''<header class="site-header hdr-b">
+        return f'''<header class="site-header hdr-b" data-sticky>
 <div class="hdr-row">
 <a class="hdr-badge" href="/" aria-label="{esc(NAME)} home"><img src="/assets/brand/badge-300.webp" alt="" width="112" height="112"></a>
 <a class="hdr-word" href="/"><span class="w-main">TRC<span>Tracker</span>.ca</span><span class="w-tag">Tracking the 94 Calls to Action</span></a>
@@ -131,7 +152,7 @@ def header(active, status_counts):
     if HEADER == "C":
         bar = "".join(f'<span class="seg {STATUS_CLASS[s]}" style="flex:{status_counts[s]}"></span>' for s in STATUS_ORDER)
         legend = "".join(f'<span class="lg"><i class="{STATUS_CLASS[s]}"></i>{status_counts[s]} {s.lower()}</span>' for s in STATUS_ORDER)
-        return f'''<header class="site-header hdr-c">
+        return f'''<header class="site-header hdr-c" data-sticky>
 <div class="hdr-row">
 <a class="hdr-icon" href="/" aria-label="{esc(NAME)} home"><img src="/assets/brand/icon-192.png" alt="" width="52" height="52"></a>
 <a class="hdr-word" href="/"><span class="w-main">TRC<span>Tracker</span>.ca</span><span class="w-tag">Tracking the 94 Calls to Action</span></a>
@@ -143,7 +164,7 @@ def header(active, status_counts):
 </a>
 </header>'''
     # A: classic masthead with a phone drawer
-    return f'''<header class="site-header hdr-a">
+    return f'''<header class="site-header hdr-a" data-sticky>
 <div class="hdr-row">
 <a class="hdr-logo" href="/"><img src="/assets/brand/logo-horizontal.webp" alt="TRCTracker.ca — Tracking the 94 Calls to Action" width="968" height="248"></a>
 <button class="hdr-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menu">{ICON_MENU}</button>

@@ -3,12 +3,13 @@
   'use strict';
   var root = document.documentElement;
   var header = document.querySelector('.site-header');
+  var sticky = document.querySelector('[data-sticky]') || header;
 
   function setHeaderHeight() {
-    if (header) root.style.setProperty('--hdr-h', header.offsetHeight + 'px');
+    if (sticky) root.style.setProperty('--hdr-h', sticky.offsetHeight + 'px');
   }
   function onScroll() {
-    root.classList.toggle('scrolled', window.scrollY > 40);
+    root.classList.toggle('scrolled', header && header.classList.contains('hdr-d') ? window.scrollY > header.offsetHeight - 4 : window.scrollY > 40);
   }
   window.addEventListener('scroll', onScroll, { passive: true });
   window.addEventListener('resize', setHeaderHeight);

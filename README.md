@@ -11,7 +11,7 @@ There is no database, server code or build framework. Everything is generated fr
 
 | Path | What it is |
 |---|---|
-| `site.config.json` | Site name, URL, header style (`A`, `B` or `C`) and asset version |
+| `site.config.json` | Site name, URL, header style (`A`–`D`) and asset version |
 | `data/calls.json` | The 94 Calls and the progress status source and date |
 | `data/news/*.json` | One file per news story |
 | `tools/build.py` | Builds every page from the data |
@@ -36,7 +36,7 @@ python3 -m http.server 8000   # then open http://localhost:8000
 
 **Update progress statuses.** Edit `status` for each Call in `data/calls.json` and update `status_source.as_of`. The header and status panel recount themselves. If you change the date, also update the "Indigenous Watchdog, Oct 1, 2026" label in `tools/build.py` (header style C).
 
-**Change the header style.** Set `header_style` in `site.config.json` to `A` (classic masthead), `B` (red band with badge) or `C` (progress strip) and rebuild.
+**Change the header style.** Set `header_style` in `site.config.json` to `D` (split badge, progress bar, sticky menu — the chosen design), `A` (classic masthead), `B` (red band with badge) or `C` (progress strip) and rebuild.
 
 **Bust browser caches after changing CSS or JS.** Increase `asset_version` in `site.config.json`.
 
