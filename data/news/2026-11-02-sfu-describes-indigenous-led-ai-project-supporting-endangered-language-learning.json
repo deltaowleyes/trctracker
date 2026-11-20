@@ -1,0 +1,35 @@
+{
+  "id": "sfu-describes-indigenous-led-ai-project-supporting-endangered-language-learning",
+  "date": "2026-10-28",
+  "published": "2026-11-02",
+  "calls": [
+    14,
+    15
+  ],
+  "context": "TRC language context: Calls #14 and #15",
+  "headline": "SFU describes Indigenous-led AI project supporting endangered language learning",
+  "sections": [
+    {
+      "label": "News",
+      "text": "On October 28, 2026, Simon Fraser University reported on First Languages AI Reality (FLAIR), a project led by Indigenous scientists Caroline and Michael Running Wolf. Hosted through SFU's Digital Democracies Institute and Cedar Supercomputing Centre, the initiative is developing language-learning and speech tools with four communities: Gwich'in in the Northwest Territories, Kwakwaka'wakw on Vancouver Island, Makah in Washington State and Yawanawá in Brazil."
+    },
+    {
+      "label": "Education",
+      "text": "SFU says the project begins with community-led language curricula and datasets, and that materials co-developed with communities remain their property. It describes AI learning tools as still under development, not proven replacements for fluent speakers, teachers or community language programs. TRC Calls #14 and #15 concern Indigenous language rights, revitalization and institutional support; this research is relevant context but does not demonstrate fulfillment of either Call."
+    },
+    {
+      "label": "Accountability",
+      "text": "What consent, access controls and Indigenous data-governance agreements guide each pilot? Will communities determine when tools are ready for use, and will independent measures show whether they support language learning? Those are questions for follow-up, not claims of wrongdoing."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Simon Fraser University — October 28 news release · Source: Original TRC Calls #14 and #15",
+      "url": "https://www.sfu.ca/sfunews/media/media-releases/2026/10/project-harnesses-ai-to-revive-indigenous-languages.html"
+    }
+  ],
+  "review": {
+    "method": "AI-assisted research and drafting; sources linked",
+    "reviewed_at": "2026-11-02"
+  }
+}

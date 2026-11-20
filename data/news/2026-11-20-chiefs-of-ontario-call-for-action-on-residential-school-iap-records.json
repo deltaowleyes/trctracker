@@ -1,0 +1,38 @@
+{
+  "id": "chiefs-of-ontario-call-for-action-on-residential-school-iap-records",
+  "date": "2026-11-17",
+  "published": "2026-11-20",
+  "calls": [
+    77
+  ],
+  "context": "Residential school records; TRC Call #77",
+  "headline": "Chiefs of Ontario call for urgent action before residential school testimony records are destroyed",
+  "sections": [
+    {
+      "label": "News",
+      "text": "In a November 17, 2026 statement, the Chiefs of Ontario called for urgent action on the notification process for Independent Assessment Process (IAP) records. More than 38,000 Survivors testified in the IAP. Under a 2017 Supreme Court of Canada order, their records will be destroyed after September 19, 2027 unless Survivors choose to preserve them. The Chiefs say only 34 Survivors received direct notification letters, all living outside Canada, and that 50 planned community gatherings were abandoned in favour of advertising and materials distributed by third parties."
+    },
+    {
+      "label": "Context",
+      "text": "TRC Call #77 asks archives to work with the National Centre for Truth and Reconciliation to identify and collect records relevant to the history and legacy of residential schools. The IAP records are a special case: the Supreme Court ruled that they were collected under a promise of confidentiality, so preservation depends on each Survivor's choice. The National Centre for Truth and Reconciliation has said it cannot change that order."
+    },
+    {
+      "label": "Accountability",
+      "text": "The Chiefs of Ontario are asking for a review of every legal and procedural option to extend the deadline, and for the Government of Canada and the court-appointed administrators to provide direct, trauma-informed outreach to Survivors supported by First Nations-led organizations. These are the organization's positions; how the government and administrators respond has not yet been reported."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Chiefs of Ontario — statement on IAP records (November 17, 2026)",
+      "url": "https://chiefs-of-ontario.org/chiefs-of-ontario-calls-for-urgent-action-to-protect-residential-school-survivors-rights-over-their-records/"
+    },
+    {
+      "title": "National Centre for Truth and Reconciliation — statement on IAP records",
+      "url": "https://nctr.ca/statements-and-news-releases/statement-on-survivor-testimony-and-independent-assessment-process-iap-records/"
+    }
+  ],
+  "review": {
+    "method": "AI-assisted research and drafting; every claim checked against the linked sources",
+    "reviewed_at": "2026-11-20"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "id": "first-nations-and-first-ministers-discuss-infrastructure-safety-and-a-proposed-sovereign-w",
+  "date": "2026-10-26",
+  "published": "2026-10-31",
+  "calls": [
+    18,
+    19,
+    42
+  ],
+  "context": "TRC context: Calls #18, #19 and #42",
+  "headline": "First Nations and First Ministers discuss infrastructure, safety and a proposed sovereign wealth fund",
+  "sections": [
+    {
+      "label": "News",
+      "text": "On October 26, Prime Minister Mark Carney convened First Nations leaders and provincial and territorial premiers to discuss economic participation, infrastructure and community safety. The federal government announced $260 million over four years for Indigenous workforce readiness, more than $2.5 billion over five years for emergency management and fire protection measures, and more than $630 million over four years to renew and expand First Nations and Inuit policing agreements, alongside proposed ongoing funding. Leaders also discussed potential revenue-sharing arrangements and a First Nations Sovereign Wealth Fund; no established fund was announced."
+    },
+    {
+      "label": "Education and context",
+      "text": "Community safety, health and Indigenous justice are connected to broader reconciliation priorities. TRC Calls #18 and #19 address health inequities; Call #42 concerns recognition and implementation of Indigenous justice systems. These are contextual connections, not verified changes in Call completion status."
+    },
+    {
+      "label": "Accountability",
+      "text": "What agreements will be signed, when will funding reach communities, and how will First Nations governments define and measure results? Announcements and proposed reforms must be distinguished from implementation."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Prime Minister of Canada, October 26, 2026",
+      "url": "https://www.pm.gc.ca/en/news/news-releases/2026/10/26/prime-minister-carney-convenes-first-nations-leadership-and-first"
+    }
+  ],
+  "review": {
+    "method": "AI-assisted research and drafting; sources linked",
+    "reviewed_at": "2026-10-31"
+  }
+}

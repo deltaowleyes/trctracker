@@ -1,0 +1,35 @@
+{
+  "id": "canada-announces-additional-130-million-for-inuit-led-housing",
+  "date": "2026-10-30",
+  "published": "2026-10-31",
+  "calls": [
+    18,
+    19
+  ],
+  "context": "TRC context: Calls #18 and #19",
+  "headline": "Canada announces additional $130 million for Inuit-led housing",
+  "sections": [
+    {
+      "label": "News",
+      "text": "On October 30, Crown-Indigenous Relations and Northern Affairs Canada announced an additional $130 million for Inuit Treaty Organizations through the Urban, Rural and Northern Indigenous Housing Strategy. The government says this brings the allocation to approximately $327.8 million. Funding can support new housing, repairs, transitional housing, rent subsidies and other Inuit-led priorities. Inuit Tapiriit Kanatami President Natan Obed welcomed direct investment in rights-holding organizations."
+    },
+    {
+      "label": "Education and context",
+      "text": "Housing affects health and well-being. The TRC's health-related Calls #18 and #19 provide broader context, but this housing announcement is not direct evidence that those Calls have been fulfilled."
+    },
+    {
+      "label": "Accountability",
+      "text": "Which projects will be funded, how many homes will be delivered or repaired, and how will Inuit organizations report outcomes? Announced funding should not be confused with completed housing."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Crown-Indigenous Relations and Northern Affairs Canada, October 30, 2026",
+      "url": "https://www.canada.ca/en/crown-indigenous-relations-northern-affairs/news/2026/10/government-of-canada-invests-an-additional-130-million-to-improve-housing-conditions-and-affordability-in-inuit-communities.html"
+    }
+  ],
+  "review": {
+    "method": "AI-assisted research and drafting; sources linked",
+    "reviewed_at": "2026-10-31"
+  }
+}

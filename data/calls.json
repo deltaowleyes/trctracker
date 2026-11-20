@@ -1,0 +1,894 @@
+{
+ "status_source": {
+  "name": "Indigenous Watchdog",
+  "as_of": "2026-10-01",
+  "url": "https://www.indigenouswatchdog.org/",
+  "note": "Third-party classifications, not TRC Tracker findings."
+ },
+ "calls": [
+  {
+   "n": 1,
+   "title": "Reduce Indigenous children in care",
+   "topic": "Child Welfare",
+   "responsible": "Federal, provincial, territorial and Indigenous governments",
+   "requirements": [
+    "Monitor and assess neglect investigations.",
+    "Resource Indigenous communities and child-welfare organizations to keep families together safely.",
+    "Ensure culturally appropriate environments for children.",
+    "Train child-welfare decision-makers on residential school history and impacts.",
+    "Require decision-makers to consider the impacts of residential schools."
+   ],
+   "status": "Stalled",
+   "hard_truth": "A child-welfare law is not the same as a demonstrated reduction in Indigenous children entering care."
+  },
+  {
+   "n": 2,
+   "title": "Publish child welfare data",
+   "topic": "Child Welfare",
+   "responsible": "Federal government, in collaboration with Indigenous organizations",
+   "requirements": [
+    "Publish annual reports on the number of Indigenous children in care.",
+    "Compare reasons for apprehension, prevention spending, and effectiveness of interventions.",
+    "Track progress toward reducing the number of children in care."
+   ],
+   "status": "Not started",
+   "hard_truth": "Without consistent annual public data, Canadians cannot independently test whether child-welfare reforms are working."
+  },
+  {
+   "n": 3,
+   "title": "Implement Jordan’s Principle",
+   "topic": "Child Welfare",
+   "responsible": "All levels of government",
+   "requirements": [
+    "Fully implement Jordan’s Principle so First Nations children can access needed public services without jurisdictional delays."
+   ],
+   "status": "Stalled",
+   "hard_truth": "Jordan’s Principle is about timely access to services, not simply announcing a funding envelope."
+  },
+  {
+   "n": 4,
+   "title": "Establish Indigenous child welfare standards",
+   "topic": "Child Welfare",
+   "responsible": "Federal government",
+   "requirements": [
+    "Enact Indigenous child-welfare legislation establishing national standards.",
+    "Affirm Indigenous governments’ right to maintain their own child-welfare agencies.",
+    "Require adequate resources and culturally appropriate practices."
+   ],
+   "status": "In progress",
+   "hard_truth": "Legislation alone cannot demonstrate that Indigenous child-welfare systems have sufficient resources and authority."
+  },
+  {
+   "n": 5,
+   "title": "Develop culturally appropriate parenting programs",
+   "topic": "Child Welfare",
+   "responsible": "Federal, provincial, territorial and Indigenous governments",
+   "requirements": [
+    "Develop culturally appropriate parenting programs for Indigenous families."
+   ],
+   "status": "In progress",
+   "hard_truth": "A culturally appropriate parenting program must be accessible to families, not merely described in policy."
+  },
+  {
+   "n": 6,
+   "title": "Repeal section 43 of the Criminal Code",
+   "topic": "Education",
+   "responsible": "",
+   "requirements": [],
+   "status": "Not started",
+   "hard_truth": "The TRC explicitly called for repeal of Criminal Code section 43; discussion of reform is not repeal."
+  },
+  {
+   "n": 7,
+   "title": "Eliminate educational and employment gaps",
+   "topic": "Education",
+   "responsible": "",
+   "requirements": [],
+   "status": "In progress",
+   "hard_truth": "Education and employment gaps require measured outcomes, not just program announcements."
+  },
+  {
+   "n": 8,
+   "title": "Improve Indigenous education outcomes",
+   "topic": "Education",
+   "responsible": "",
+   "requirements": [],
+   "status": "Stalled",
+   "hard_truth": "Comparable per-student funding matters; an announced investment does not automatically close a funding gap."
+  },
+  {
+   "n": 9,
+   "title": "Report on First Nations education funding",
+   "topic": "Education",
+   "responsible": "",
+   "requirements": [],
+   "status": "Not started",
+   "hard_truth": "Without transparent education funding and outcome data, accountability remains difficult."
+  },
+  {
+   "n": 10,
+   "title": "Develop culturally appropriate education agreements",
+   "topic": "Education",
+   "responsible": "",
+   "requirements": [],
+   "status": "Not started",
+   "hard_truth": "A commitment to new education legislation is not the same as meeting every TRC principle for its development."
+  },
+  {
+   "n": 11,
+   "title": "Fund First Nations post-secondary education",
+   "topic": "Education",
+   "responsible": "",
+   "requirements": [],
+   "status": "In progress",
+   "hard_truth": "Post-secondary access depends on sustained funding and actual student opportunity."
+  },
+  {
+   "n": 12,
+   "title": "Create Indigenous early childhood programs",
+   "topic": "Education",
+   "responsible": "",
+   "requirements": [],
+   "status": "In progress",
+   "hard_truth": "Early childhood programs need culturally appropriate delivery and dependable access."
+  },
+  {
+   "n": 13,
+   "title": "Recognize Indigenous language rights",
+   "topic": "Language and Culture",
+   "responsible": "Federal government",
+   "requirements": [
+    "Acknowledge that Aboriginal rights include Aboriginal language rights."
+   ],
+   "status": "Complete",
+   "hard_truth": "Recognizing language rights is an important step, but language survival depends on sustained revitalization."
+  },
+  {
+   "n": 14,
+   "title": "Enact Indigenous languages legislation",
+   "topic": "Language and Culture",
+   "responsible": "Federal government",
+   "requirements": [
+    "Enact an Aboriginal Languages Act with Indigenous peoples.",
+    "Recognize urgency of language preservation and revitalization.",
+    "Provide sufficient funding for language revitalization and preservation."
+   ],
+   "status": "Stalled",
+   "hard_truth": "The Indigenous Languages Act exists; the hard question is whether its principles are fully funded and realized."
+  },
+  {
+   "n": 15,
+   "title": "Appoint an Indigenous languages commissioner",
+   "topic": "Language and Culture",
+   "responsible": "Federal government",
+   "requirements": [
+    "Appoint an Aboriginal Languages Commissioner in consultation with Aboriginal groups."
+   ],
+   "status": "Complete",
+   "hard_truth": "Creating an office is not the same as ensuring language revitalization succeeds."
+  },
+  {
+   "n": 16,
+   "title": "Fund Indigenous language post-secondary programs",
+   "topic": "Language and Culture",
+   "responsible": "",
+   "requirements": [],
+   "status": "In progress",
+   "hard_truth": "A degree program alone cannot replace community-led language transmission."
+  },
+  {
+   "n": 17,
+   "title": "Restore names changed by residential schools",
+   "topic": "Language and Culture",
+   "responsible": "",
+   "requirements": [],
+   "status": "Stalled",
+   "hard_truth": "Reclaiming an Indigenous name should not be blocked by avoidable administrative cost."
+  },
+  {
+   "n": 18,
+   "title": "Recognize Indigenous health rights",
+   "topic": "Health",
+   "responsible": "",
+   "requirements": [],
+   "status": "Stalled",
+   "hard_truth": "Acknowledging Indigenous health rights does not by itself close health disparities."
+  },
+  {
+   "n": 19,
+   "title": "Close Indigenous health outcome gaps",
+   "topic": "Health",
+   "responsible": "",
+   "requirements": [],
+   "status": "Stalled",
+   "hard_truth": "Without published, comparable health outcomes, promises to close gaps cannot be fully evaluated."
+  },
+  {
+   "n": 20,
+   "title": "Address Indigenous health jurisdiction",
+   "topic": "Health",
+   "responsible": "",
+   "requirements": [],
+   "status": "In progress",
+   "hard_truth": "Jurisdictional disputes should not prevent Indigenous peoples from receiving care."
+  },
+  {
+   "n": 21,
+   "title": "Fund Indigenous healing centres",
+   "topic": "Health",
+   "responsible": "",
+   "requirements": [],
+   "status": "In progress",
+   "hard_truth": "A healing-centre funding announcement is not proof that communities have sufficient long-term services."
+  },
+  {
+   "n": 22,
+   "title": "Recognize value of Indigenous healing practices",
+   "topic": "Health",
+   "responsible": "",
+   "requirements": [],
+   "status": "In progress",
+   "hard_truth": "Respect for Indigenous healing practices must be meaningful in care, not merely ceremonial."
+  },
+  {
+   "n": 23,
+   "title": "Increase Indigenous health professionals",
+   "topic": "Health",
+   "responsible": "",
+   "requirements": [],
+   "status": "In progress",
+   "hard_truth": "Recruitment goals need actual Indigenous health workforce outcomes."
+  },
+  {
+   "n": 24,
+   "title": "Provide cultural competency training in health care",
+   "topic": "Health",
+   "responsible": "",
+   "requirements": [],
+   "status": "Stalled",
+   "hard_truth": "Cultural competency training must change practice, not just attendance records."
+  },
+  {
+   "n": 25,
+   "title": "Affirm Aboriginal rights in legal policy",
+   "topic": "Justice",
+   "responsible": "",
+   "requirements": [],
+   "status": "Stalled",
+   "hard_truth": "Police independence must be protected when governments have interests in related litigation."
+  },
+  {
+   "n": 26,
+   "title": "Review limitation periods in historical abuse cases",
+   "topic": "Justice",
+   "responsible": "",
+   "requirements": [],
+   "status": "Not started",
+   "hard_truth": "Fair access to justice requires addressing barriers in historic abuse claims."
+  },
+  {
+   "n": 27,
+   "title": "Ensure legal independence for abuse claims",
+   "topic": "Justice",
+   "responsible": "",
+   "requirements": [],
+   "status": "Stalled",
+   "hard_truth": "Legal education about Indigenous peoples should be substantive and accountable."
+  },
+  {
+   "n": 28,
+   "title": "Require law students to study Indigenous legal history and rights",
+   "topic": "Justice",
+   "responsible": "",
+   "requirements": [],
+   "status": "Stalled",
+   "hard_truth": "Law-school curriculum commitments need consistent implementation and evaluation."
+  },
+  {
+   "n": 29,
+   "title": "Resolve legal issues involving residential school claims",
+   "topic": "Justice",
+   "responsible": "",
+   "requirements": [],
+   "status": "Stalled",
+   "hard_truth": "Resolving outstanding claims requires more than acknowledging they exist."
+  },
+  {
+   "n": 30,
+   "title": "Eliminate Indigenous overrepresentation in custody",
+   "topic": "Justice",
+   "responsible": "",
+   "requirements": [],
+   "status": "Stalled",
+   "hard_truth": "Reducing Indigenous incarceration requires measurable change in custody rates."
+  },
+  {
+   "n": 31,
+   "title": "Provide alternatives to imprisonment",
+   "topic": "Justice",
+   "responsible": "",
+   "requirements": [],
+   "status": "In progress",
+   "hard_truth": "Alternatives to imprisonment need real availability and community resources."
+  },
+  {
+   "n": 32,
+   "title": "Amend criminal justice policies",
+   "topic": "Justice",
+   "responsible": "",
+   "requirements": [],
+   "status": "In progress",
+   "hard_truth": "Sentencing reforms should be evaluated for actual impacts on Indigenous people."
+  },
+  {
+   "n": 33,
+   "title": "Recognize fetal alcohol spectrum disorder in justice",
+   "topic": "Justice",
+   "responsible": "",
+   "requirements": [],
+   "status": "In progress",
+   "hard_truth": "Justice responses to FASD require accessible assessment and support."
+  },
+  {
+   "n": 34,
+   "title": "Reform justice responses to FASD",
+   "topic": "Justice",
+   "responsible": "",
+   "requirements": [],
+   "status": "Not started",
+   "hard_truth": "Legislative reform should be judged against the specific FASD-related changes the TRC requested."
+  },
+  {
+   "n": 35,
+   "title": "Address Indigenous justice and healing needs",
+   "topic": "Justice",
+   "responsible": "",
+   "requirements": [],
+   "status": "Stalled",
+   "hard_truth": "Healing lodges and culturally appropriate services need capacity, not only recognition."
+  },
+  {
+   "n": 36,
+   "title": "Provide culturally relevant correctional services",
+   "topic": "Justice",
+   "responsible": "",
+   "requirements": [],
+   "status": "In progress",
+   "hard_truth": "Correctional programming should be assessed by access and outcomes."
+  },
+  {
+   "n": 37,
+   "title": "Offer support for Indigenous offenders",
+   "topic": "Justice",
+   "responsible": "",
+   "requirements": [],
+   "status": "In progress",
+   "hard_truth": "Community supports after release matter as much as programs inside institutions."
+  },
+  {
+   "n": 38,
+   "title": "Eliminate overrepresentation of Indigenous youth in custody",
+   "topic": "Justice",
+   "responsible": "",
+   "requirements": [],
+   "status": "In progress",
+   "hard_truth": "Reducing Indigenous youth custody requires published results."
+  },
+  {
+   "n": 39,
+   "title": "Publish Indigenous victimization data",
+   "topic": "Justice",
+   "responsible": "",
+   "requirements": [],
+   "status": "In progress",
+   "hard_truth": "Victimization data must be timely and useful to Indigenous communities."
+  },
+  {
+   "n": 40,
+   "title": "Fund Indigenous-specific victim services",
+   "topic": "Justice",
+   "responsible": "",
+   "requirements": [],
+   "status": "In progress",
+   "hard_truth": "Victim services should be culturally appropriate and available, not merely funded on paper."
+  },
+  {
+   "n": 41,
+   "title": "Public inquiry into missing and murdered Indigenous women and girls",
+   "topic": "Justice",
+   "responsible": "",
+   "requirements": [],
+   "status": "Complete",
+   "hard_truth": "A completed national inquiry does not automatically mean its recommendations have been implemented."
+  },
+  {
+   "n": 42,
+   "title": "Commit to Aboriginal justice systems",
+   "topic": "Justice",
+   "responsible": "",
+   "requirements": [],
+   "status": "In progress",
+   "hard_truth": "Recognition of Indigenous justice systems requires concrete jurisdictional and institutional changes."
+  },
+  {
+   "n": 43,
+   "title": "Adopt UNDRIP as reconciliation framework",
+   "topic": "UNDRIP",
+   "responsible": "",
+   "requirements": [],
+   "status": "Stalled",
+   "hard_truth": "Adopting UNDRIP in principle is different from fully implementing it in laws and practice."
+  },
+  {
+   "n": 44,
+   "title": "Develop national UNDRIP action plan",
+   "topic": "UNDRIP",
+   "responsible": "",
+   "requirements": [],
+   "status": "In progress",
+   "hard_truth": "An action plan is a roadmap, not proof that its measures have been delivered."
+  },
+  {
+   "n": 45,
+   "title": "Issue Royal Proclamation of Reconciliation",
+   "topic": "Royal Proclamation",
+   "responsible": "",
+   "requirements": [],
+   "status": "Not started",
+   "hard_truth": "A promised reconciliation proclamation must be judged by whether it is actually issued and implemented."
+  },
+  {
+   "n": 46,
+   "title": "Create Covenant of Reconciliation",
+   "topic": "Royal Proclamation",
+   "responsible": "",
+   "requirements": [],
+   "status": "Not started",
+   "hard_truth": "A covenant requires meaningful participation and commitments, not just proposed language."
+  },
+  {
+   "n": 47,
+   "title": "Repudiate doctrines of discovery and terra nullius",
+   "topic": "Royal Proclamation",
+   "responsible": "",
+   "requirements": [],
+   "status": "Not started",
+   "hard_truth": "Rejecting colonial doctrines in statements is different from eliminating their influence in law and policy."
+  },
+  {
+   "n": 48,
+   "title": "Church adoption of UNDRIP",
+   "topic": "Settlement Agreement Parties",
+   "responsible": "",
+   "requirements": [],
+   "status": "In progress",
+   "hard_truth": "Religious organizations' commitments to UNDRIP must be assessed through their actions."
+  },
+  {
+   "n": 49,
+   "title": "Religious organizations’ compliance with UNDRIP",
+   "topic": "Settlement Agreement Parties",
+   "responsible": "",
+   "requirements": [],
+   "status": "Complete",
+   "hard_truth": "Public repudiation of harmful doctrines is a step; the broader reconciliation work continues."
+  },
+  {
+   "n": 50,
+   "title": "Establish Indigenous equity in legal systems",
+   "topic": "Legal Equity",
+   "responsible": "",
+   "requirements": [],
+   "status": "In progress",
+   "hard_truth": "Indigenous legal institutions need sustained resources and meaningful authority."
+  },
+  {
+   "n": 51,
+   "title": "Publish legal opinions on Indigenous rights",
+   "topic": "Legal Equity",
+   "responsible": "",
+   "requirements": [],
+   "status": "Not started",
+   "hard_truth": "Transparency about legal positions matters when Indigenous rights are at stake."
+  },
+  {
+   "n": 52,
+   "title": "Respect Indigenous rights in legal doctrine",
+   "topic": "Legal Equity",
+   "responsible": "",
+   "requirements": [],
+   "status": "Not started",
+   "hard_truth": "Legal doctrine can still affect whether Indigenous peoples can exercise recognized rights."
+  },
+  {
+   "n": 53,
+   "title": "Establish a National Council for Reconciliation",
+   "topic": "National Council for Reconciliation",
+   "responsible": "",
+   "requirements": [],
+   "status": "Complete",
+   "hard_truth": "Establishing a council is a milestone, not proof that its oversight has all necessary independence and capacity."
+  },
+  {
+   "n": 54,
+   "title": "Provide multi-year funding for the National Council",
+   "topic": "National Council for Reconciliation",
+   "responsible": "",
+   "requirements": [],
+   "status": "In progress",
+   "hard_truth": "An oversight body without reliable funding cannot fulfill its mandate effectively."
+  },
+  {
+   "n": 55,
+   "title": "Provide reconciliation data to the National Council",
+   "topic": "National Council for Reconciliation",
+   "responsible": "",
+   "requirements": [],
+   "status": "In progress",
+   "hard_truth": "Accountability depends on governments providing the data an oversight body needs."
+  },
+  {
+   "n": 56,
+   "title": "Prime Minister's annual State of Aboriginal Peoples report",
+   "topic": "National Council for Reconciliation",
+   "responsible": "",
+   "requirements": [],
+   "status": "Not started",
+   "hard_truth": "An annual public response is different from internal reporting."
+  },
+  {
+   "n": 57,
+   "title": "Educate public servants on Indigenous history and rights",
+   "topic": "Public Service Training",
+   "responsible": "",
+   "requirements": [],
+   "status": "In progress",
+   "hard_truth": "Public-service training needs measurable quality and consequences for practice."
+  },
+  {
+   "n": 58,
+   "title": "Papal apology for residential schools",
+   "topic": "Church Reconciliation",
+   "responsible": "",
+   "requirements": [],
+   "status": "Stalled",
+   "hard_truth": "An apology cannot substitute for every form of repair and reconciliation."
+  },
+  {
+   "n": 59,
+   "title": "Educate congregations on residential schools",
+   "topic": "Church Reconciliation",
+   "responsible": "",
+   "requirements": [],
+   "status": "Complete",
+   "hard_truth": "Educating congregations is an ongoing responsibility, not a one-time statement."
+  },
+  {
+   "n": 60,
+   "title": "Church training in Indigenous spirituality and history",
+   "topic": "Church Reconciliation",
+   "responsible": "",
+   "requirements": [],
+   "status": "In progress",
+   "hard_truth": "Training faith leaders should include Indigenous perspectives and lived experience."
+  },
+  {
+   "n": 61,
+   "title": "Church funding for healing and reconciliation",
+   "topic": "Church Reconciliation",
+   "responsible": "",
+   "requirements": [],
+   "status": "In progress",
+   "hard_truth": "Healing and reconciliation funding should be judged by community priorities and access."
+  },
+  {
+   "n": 62,
+   "title": "Teach residential school history in schools",
+   "topic": "Education for Reconciliation",
+   "responsible": "",
+   "requirements": [],
+   "status": "Stalled",
+   "hard_truth": "School curriculum commitments must reach classrooms and teachers."
+  },
+  {
+   "n": 63,
+   "title": "Build Indigenous curriculum and teaching resources",
+   "topic": "Education for Reconciliation",
+   "responsible": "",
+   "requirements": [],
+   "status": "In progress",
+   "hard_truth": "Sharing best practices is not the same as implementing them consistently."
+  },
+  {
+   "n": 64,
+   "title": "Fund reconciliation research",
+   "topic": "Education for Reconciliation",
+   "responsible": "",
+   "requirements": [],
+   "status": "Not started",
+   "hard_truth": "Public funding and protection of Indigenous spiritual practices must match the call's requirements."
+  },
+  {
+   "n": 65,
+   "title": "Support youth reconciliation organizations",
+   "topic": "Education for Reconciliation",
+   "responsible": "",
+   "requirements": [],
+   "status": "In progress",
+   "hard_truth": "Research needs long-term support and Indigenous collaboration."
+  },
+  {
+   "n": 66,
+   "title": "Review museum policies with Indigenous peoples",
+   "topic": "Youth",
+   "responsible": "Federal government",
+   "requirements": [
+    "Establish multi-year funding for community-based youth organizations delivering reconciliation programs.",
+    "Create a national network to share information and best practices."
+   ],
+   "status": "In progress",
+   "hard_truth": "Youth programs cannot plan long-term work on short-term promises alone."
+  },
+  {
+   "n": 67,
+   "title": "Review museum policies and best practices",
+   "topic": "Museums and Archives",
+   "responsible": "",
+   "requirements": [],
+   "status": "Complete",
+   "hard_truth": "Museum policy reform requires Indigenous participation and actual institutional change."
+  },
+  {
+   "n": 68,
+   "title": "Fund Indigenous museum and heritage projects",
+   "topic": "Museums and Archives",
+   "responsible": "",
+   "requirements": [],
+   "status": "Complete",
+   "hard_truth": "Commemoration and museum projects should be led or shaped by Indigenous communities."
+  },
+  {
+   "n": 69,
+   "title": "Review archival policies and access",
+   "topic": "Museums and Archives",
+   "responsible": "",
+   "requirements": [],
+   "status": "In progress",
+   "hard_truth": "Archives access and repatriation require concrete policies and resources."
+  },
+  {
+   "n": 70,
+   "title": "Fund archival review and reconciliation",
+   "topic": "Museums and Archives",
+   "responsible": "",
+   "requirements": [],
+   "status": "Complete",
+   "hard_truth": "Archival reviews should lead to improved access and respectful stewardship."
+  },
+  {
+   "n": 71,
+   "title": "Provide residential school death records",
+   "topic": "Missing Children and Burial Sites",
+   "responsible": "",
+   "requirements": [],
+   "status": "Stalled",
+   "hard_truth": "Accurate records matter to families seeking answers about children who never returned home."
+  },
+  {
+   "n": 72,
+   "title": "Create a national residential school death register",
+   "topic": "Missing Children and Burial Sites",
+   "responsible": "",
+   "requirements": [],
+   "status": "In progress",
+   "hard_truth": "A national death register must be complete, responsibly maintained and accessible under appropriate protocols."
+  },
+  {
+   "n": 73,
+   "title": "Create a national residential school burial register",
+   "topic": "Missing Children and Burial Sites",
+   "responsible": "",
+   "requirements": [],
+   "status": "In progress",
+   "hard_truth": "A burial register must respect families and communities while supporting identification and remembrance."
+  },
+  {
+   "n": 74,
+   "title": "Inform families of burial locations",
+   "topic": "Missing Children and Burial Sites",
+   "responsible": "",
+   "requirements": [],
+   "status": "Stalled",
+   "hard_truth": "Families deserve timely, respectful information about burial locations."
+  },
+  {
+   "n": 75,
+   "title": "Protect and maintain residential school cemeteries",
+   "topic": "Missing Children and Burial Sites",
+   "responsible": "",
+   "requirements": [],
+   "status": "In progress",
+   "hard_truth": "Site protection requires resources, consultation and sustained stewardship."
+  },
+  {
+   "n": 76,
+   "title": "Develop protocols for burial site work",
+   "topic": "Missing Children and Burial Sites",
+   "responsible": "",
+   "requirements": [],
+   "status": "In progress",
+   "hard_truth": "Work at burial sites must follow Indigenous community protocols and leadership."
+  },
+  {
+   "n": 77,
+   "title": "Provide records to the NCTR",
+   "topic": "NCTR",
+   "responsible": "",
+   "requirements": [],
+   "status": "Stalled",
+   "hard_truth": "Records cannot contribute to truth if they are withheld from the NCTR."
+  },
+  {
+   "n": 78,
+   "title": "Fund the NCTR",
+   "topic": "NCTR",
+   "responsible": "",
+   "requirements": [],
+   "status": "Stalled",
+   "hard_truth": "Long-term archival work requires stable institutional funding."
+  },
+  {
+   "n": 79,
+   "title": "Develop a national commemoration framework",
+   "topic": "Commemoration",
+   "responsible": "",
+   "requirements": [],
+   "status": "In progress",
+   "hard_truth": "A national commemoration framework needs Indigenous participation and implementation."
+  },
+  {
+   "n": 80,
+   "title": "National Day for Truth and Reconciliation",
+   "topic": "Commemoration",
+   "responsible": "",
+   "requirements": [],
+   "status": "Complete",
+   "hard_truth": "A federal statutory holiday is a concrete achievement, but public education cannot be confined to one day."
+  },
+  {
+   "n": 81,
+   "title": "National monument in Ottawa",
+   "topic": "Commemoration",
+   "responsible": "",
+   "requirements": [],
+   "status": "In progress",
+   "hard_truth": "A national monument must be judged by the specific commitment and its delivery."
+  },
+  {
+   "n": 82,
+   "title": "Residential school monuments in provincial and territorial capitals",
+   "topic": "Commemoration",
+   "responsible": "",
+   "requirements": [],
+   "status": "In progress",
+   "hard_truth": "Provincial and territorial monuments require jurisdiction-by-jurisdiction accountability."
+  },
+  {
+   "n": 83,
+   "title": "Indigenous and non-Indigenous arts collaboration",
+   "topic": "Commemoration",
+   "responsible": "",
+   "requirements": [],
+   "status": "Complete",
+   "hard_truth": "Arts collaboration is meaningful when Indigenous creators shape the work."
+  },
+  {
+   "n": 84,
+   "title": "CBC/Radio-Canada reconciliation programming",
+   "topic": "Media",
+   "responsible": "",
+   "requirements": [],
+   "status": "Complete",
+   "hard_truth": "Broadcast commitments should be assessed by actual Indigenous programming and representation."
+  },
+  {
+   "n": 85,
+   "title": "APTN reconciliation programming",
+   "topic": "Media",
+   "responsible": "",
+   "requirements": [],
+   "status": "Complete",
+   "hard_truth": "Indigenous broadcasting needs sustained support and reach."
+  },
+  {
+   "n": 86,
+   "title": "Journalism education on Indigenous history",
+   "topic": "Media",
+   "responsible": "",
+   "requirements": [],
+   "status": "Stalled",
+   "hard_truth": "Journalism education is essential because inaccurate coverage can perpetuate harm."
+  },
+  {
+   "n": 87,
+   "title": "Indigenous athletes in sports history",
+   "topic": "Sports",
+   "responsible": "",
+   "requirements": [],
+   "status": "In progress",
+   "hard_truth": "Sports history must recognize Indigenous athletes and their contributions."
+  },
+  {
+   "n": 88,
+   "title": "Support North American Indigenous Games",
+   "topic": "Sports",
+   "responsible": "",
+   "requirements": [],
+   "status": "In progress",
+   "hard_truth": "Games funding should be reliable enough to sustain Indigenous participation."
+  },
+  {
+   "n": 89,
+   "title": "Make federal sport legislation inclusive",
+   "topic": "Sports",
+   "responsible": "",
+   "requirements": [],
+   "status": "Not started",
+   "hard_truth": "Inclusive sports legislation requires more than aspirational language."
+  },
+  {
+   "n": 90,
+   "title": "Inclusive national sports programs",
+   "topic": "Sports",
+   "responsible": "",
+   "requirements": [],
+   "status": "In progress",
+   "hard_truth": "Sports policy should be measured by access and Indigenous representation."
+  },
+  {
+   "n": 91,
+   "title": "Respect Indigenous protocols at sporting events",
+   "topic": "Sports",
+   "responsible": "",
+   "requirements": [],
+   "status": "In progress",
+   "hard_truth": "Respecting Indigenous protocols at sporting events requires practice, not symbolism alone."
+  },
+  {
+   "n": 92,
+   "title": "Business adoption of UNDRIP",
+   "topic": "Business",
+   "responsible": "Canadian corporate sector",
+   "requirements": [
+    "Adopt UNDRIP as a reconciliation framework.",
+    "Commit to meaningful consultation and free, prior and informed consent before economic development projects.",
+    "Ensure equitable Indigenous access to jobs, training and education.",
+    "Provide staff training on Indigenous history, rights and anti-racism."
+   ],
+   "status": "Not started",
+   "hard_truth": "A corporate reconciliation statement is not proof of consent, equitable opportunity or staff training."
+  },
+  {
+   "n": 93,
+   "title": "Teach newcomers Indigenous history",
+   "topic": "Newcomers",
+   "responsible": "Federal government and national Indigenous organizations",
+   "requirements": [
+    "Revise newcomer information and citizenship tests to include Treaties, residential schools and Indigenous histories."
+   ],
+   "status": "Stalled",
+   "hard_truth": "Newcomer education should accurately include Treaties and residential-school history."
+  },
+  {
+   "n": 94,
+   "title": "Include Treaties in citizenship oath",
+   "topic": "Newcomers",
+   "responsible": "Government of Canada",
+   "requirements": [
+    "Revise the Oath of Citizenship to include a commitment to faithfully observe Treaties with Indigenous Peoples."
+   ],
+   "status": "Complete",
+   "hard_truth": "Changing the citizenship oath is a specific legislative achievement; learning and understanding still matter."
+  }
+ ]
+}
