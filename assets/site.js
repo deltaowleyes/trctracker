@@ -1,4 +1,12 @@
-/* TRC Tracker — header behaviour and Calls directory filters */
+/* TRC Tracker — header behaviour, scroll reveal and Calls directory filters */
+window.addEventListener('load', function () {
+  if (!window.AOS) {
+    Array.prototype.forEach.call(document.querySelectorAll('[data-aos]'), function (el) { el.classList.add('aos-animate'); });
+    return;
+  }
+  var reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+  AOS.init({ once: true, duration: 500, offset: 40, disable: reduce });
+});
 (function () {
   'use strict';
   var root = document.documentElement;
@@ -48,6 +56,9 @@
   var empty = document.getElementById('empty');
   var chips = Array.prototype.slice.call(document.querySelectorAll('.chip'));
   var status = '';
+  var groups = Array.prototype.slice.call(list.querySelectorAll('.group'));
+  var parts = Array.prototype.slice.call(list.querySelectorAll('.part'));
+  var saved = null;
 
   function render() {
     var q = (search.value || '').toLowerCase().trim();
@@ -62,6 +73,20 @@
     });
     count.textContent = shown + ' of 94 Calls to Action';
     empty.hidden = shown !== 0;
+    var filtering = !!(q || topic.value || status);
+    if (filtering && !saved) saved = groups.map(function (g) { return g.open; });
+    groups.forEach(function (g, i) {
+      var n = g.querySelectorAll('.call:not([hidden])').length;
+      g.hidden = n === 0;
+      if (filtering) { g.open = n > 0; g.classList.add('aos-animate'); }
+      else if (saved) g.open = saved[i];
+    });
+    if (!filtering) saved = null;
+    parts.forEach(function (p) {
+      var next = p.nextElementSibling, any = false;
+      while (next && next.classList.contains('group')) { if (!next.hidden) any = true; next = next.nextElementSibling; }
+      p.hidden = !any;
+    });
   }
   search.addEventListener('input', render);
   topic.addEventListener('change', render);
@@ -87,6 +112,8 @@
       var el = document.getElementById('call-' + m[1]);
       if (el) {
         if (el.hidden) { search.value = ''; topic.value = ''; status = ''; render(); }
+        var g = el.closest('.group');
+        if (g) { g.open = true; g.classList.add('aos-animate'); }
         el.querySelector('details').open = true;
         el.scrollIntoView();
       }

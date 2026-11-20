@@ -2,5 +2,8 @@
   "site_name": "TRC Tracker",
   "site_url": "https://trctracker.ca",
   "header_style": "D",
-  "asset_version": "3"
+  "asset_version": "4",
+  "hero_image": "",
+  "hero_alt": "",
+  "hero_credit": ""
 }

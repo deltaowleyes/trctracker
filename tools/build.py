@@ -24,6 +24,8 @@ SITE = CONFIG["site_url"].rstrip("/")
 NAME = CONFIG["site_name"]
 HEADER = CONFIG.get("header_style", "A").upper()
 ASSET_V = CONFIG.get("asset_version", "1")
+AOS_HEAD = (f'<link rel="stylesheet" href="/assets/vendor/aos.css?v={ASSET_V}">\n'
+            f'<script defer src="/assets/vendor/aos.js?v={ASSET_V}"></script>')
 
 STATUS_ORDER = ["Complete", "In progress", "Stalled", "Not started"]
 STATUS_CLASS = {"Complete": "complete", "In progress": "progress", "Stalled": "stalled", "Not started": "notstarted"}
@@ -121,8 +123,6 @@ def search_link():
 
 def header(active, status_counts):
     if HEADER == "D":
-        bar = "".join(f'<span class="seg {STATUS_CLASS[s]}" style="flex:{status_counts[s]}"></span>' for s in STATUS_ORDER)
-        legend = "".join(f'<span class="lg"><i class="{STATUS_CLASS[s]}"></i>{status_counts[s]} {s.lower()}</span>' for s in STATUS_ORDER)
         return f'''<header class="site-header hdr-d">
 <div class="hdr-top">
 <a class="hdr-badge" href="/" aria-label="{esc(NAME)} home"><img src="/assets/brand/badge-300.webp" alt="" width="132" height="132"></a>
@@ -130,8 +130,6 @@ def header(active, status_counts):
 </div>
 <a class="hdr-progress" href="/#status" aria-label="{status_counts['Complete']} of 94 Calls complete. See how status is assessed.">
 <span class="hp-head"><b>{status_counts['Complete']} of 94 complete</b><small>Indigenous Watchdog, Oct 1, 2026</small></span>
-<span class="bar" aria-hidden="true">{bar}</span>
-<span class="legend" aria-hidden="true">{legend}</span>
 </a>
 </header>
 <nav class="site-menu" data-sticky aria-label="Main">
@@ -275,12 +273,51 @@ def build_calls(calls_data, news, counts):
     topic_opts = "".join(f'<option value="{esc(t)}">{esc(t)} ({len(calls_by_topic[t])})</option>' for t in topics)
     status_btns = "".join(f'<button type="button" class="chip" data-status="{esc(s)}" aria-pressed="false"><i class="{STATUS_CLASS[s]}"></i>{esc(s)} <b>{counts[s]}</b></button>' for s in STATUS_ORDER)
     bar = "".join(f'<span class="seg {STATUS_CLASS[s]}" style="flex:{counts[s]}" title="{counts[s]} {esc(s.lower())}"></span>' for s in STATUS_ORDER)
-    cards = "\n".join(call_card(c, news_by_call, calls_by_topic, source) for c in calls)
-    latest = "".join(f'<li><a href="/news/{esc(x["id"])}/">{esc(x["headline"])}</a><span class="muted">{short_date(x["published"])}</span></li>' for x in news[:3])
-    body = f'''<section class="page-head">
+    groups = []
+    for c in calls:
+        if not groups or groups[-1][0] != c["topic"]:
+            groups.append((c["topic"], []))
+        groups[-1][1].append(c)
+    parts = (("Legacy", "Calls 1–42: the harms of residential schools in child welfare, education, language, health and justice", lambda n: n <= 42),
+             ("Reconciliation", "Calls 43–94: what governments, churches, institutions and Canadians must do next", lambda n: n >= 43))
+    group_html = []
+    first = True
+    for pname, pdesc, inpart in parts:
+        group_html.append(f'<div class="part"><h2 class="part-h">{pname}</h2><p class="part-d muted">{esc(pdesc)}</p></div>')
+        for t, gc in groups:
+            if not inpart(gc[0]["n"]):
+                continue
+            gcount = {s: sum(1 for c in gc if c["status"] == s) for s in STATUS_ORDER}
+            gbar = "".join(f'<span class="seg {STATUS_CLASS[s]}" style="flex:{gcount[s]}"></span>' for s in STATUS_ORDER if gcount[s])
+            rng = f"Call {gc[0]['n']}" if len(gc) == 1 else f"Calls {gc[0]['n']}–{gc[-1]['n']}"
+            stalled = f'<span class="g-stalled">{gcount["Stalled"]} stalled</span>' if gcount["Stalled"] else ""
+            label = f'{gcount["Complete"]} of {len(gc)} complete' + (f', {gcount["Stalled"]} stalled' if gcount["Stalled"] else "")
+            cards = "\n".join(call_card(c, news_by_call, calls_by_topic, source) for c in gc)
+            group_html.append(f'''<details class="group" data-topic="{esc(t)}" data-aos="fade-up"{" open" if first else ""}>
+<summary><span class="g-name"><b>{esc(t)}</b><small>{rng}</small></span><span class="g-stat"><span class="bar mini" role="img" aria-label="{esc(label)}">{gbar}</span><span class="g-count">{gcount["Complete"]} of {len(gc)} complete</span>{stalled}</span></summary>
+<div class="g-calls">
+{cards}
+</div>
+</details>''')
+            first = False
+    cards = "\n".join(group_html)
+    strip = "".join(f'''<article class="ns-card" data-aos="fade-up" data-aos-delay="{i * 100}">
+<p class="meta"><time datetime="{x['published']}">{short_date(x['published'])}</time>{"".join(f'<a class="tag" href="/#call-{n}">Call #{n}</a>' for n in x.get("calls", [])[:2])}</p>
+<h3><a href="/news/{esc(x['id'])}/">{esc(x['headline'])}</a></h3>
+</article>''' for i, x in enumerate(news[:3]))
+    hero = CONFIG.get("hero_image", "")
+    if hero:
+        credit = f'<figcaption>{esc(CONFIG.get("hero_credit", ""))}</figcaption>' if CONFIG.get("hero_credit") else ""
+        art = f'<figure class="hero-art"><img src="{esc(hero)}" alt="{esc(CONFIG.get("hero_alt", ""))}" width="720" height="540" fetchpriority="high">{credit}</figure>'
+    else:
+        art = "<!-- hero art slot: set hero_image, hero_alt and hero_credit in site.config.json and rebuild -->"
+    body = f'''<section class="page-head{' has-art' if hero else ''}">
+<div class="ph-text">
 <p class="eyebrow">Directory</p>
 <h1>94 Calls to Action</h1>
 <p class="lede">Plain-language summaries of every Call from the Truth and Reconciliation Commission of Canada, who is responsible, and where each one stands.</p>
+</div>
+{art}
 </section>
 <section class="status-panel" id="status" aria-labelledby="status-h">
 <div class="sp-top"><h2 id="status-h">{counts['Complete']} of 94 complete</h2><p class="muted">Independent assessment by {esc(source['name'])}, {long_date(source['as_of'])}</p></div>
@@ -290,9 +327,13 @@ def build_calls(calls_data, news, counts):
 <p>The Government of Canada also publishes <a href="https://www.rcaanc-cirnac.gc.ca/eng/1524494530110/1557511412801">federal progress reporting</a>. It covers the 76 Calls involving federal leadership, while Indigenous Watchdog classifies all 94, so their percentages are not directly comparable.</p>
 </details>
 </section>
+<section class="news-strip" aria-labelledby="ns-h">
+<div class="ns-head"><h2 id="ns-h">Latest TRC News</h2><a href="/news/">All TRC news →</a></div>
+<div class="ns-row">{strip}</div>
+</section>
 <section class="finder" aria-label="Find a Call">
 <div class="finder-row">
-<label class="search-box"><span class="sr">Search the Calls</span>{ICON_SEARCH}<input id="search" type="search" placeholder="Search by number, topic or keyword" autocomplete="off"></label>
+<label class="search-box"><span class="sr">Search the Calls</span>{ICON_SEARCH}<input id="search" type="search" placeholder="Search 94 Calls" autocomplete="off"></label>
 <label class="sr" for="topic">Topic</label>
 <select id="topic"><option value="">All topics</option>{topic_opts}</select>
 </div>
@@ -302,13 +343,12 @@ def build_calls(calls_data, news, counts):
 <section class="calls" id="calls">
 {cards}
 <p class="empty" id="empty" hidden>No Calls match that search. <button type="button" id="reset">Clear filters</button></p>
-</section>
-<aside class="latest" aria-labelledby="latest-h"><h2 id="latest-h">Latest TRC News</h2><ul>{latest}</ul><p><a class="btn" href="/news/">All TRC News</a></p></aside>'''
+</section>'''
     ld = {"@context": "https://schema.org", "@type": "WebSite", "name": NAME, "url": SITE + "/"}
     return page(title="94 Calls to Action — status and progress tracker",
                 description="Track all 94 Truth and Reconciliation Commission of Canada Calls to Action: plain-language summaries, responsible parties, independent progress status and related news.",
                 path="/", active="calls", body=body, status_counts=counts,
-                extra_head=f'<script type="application/ld+json">{json.dumps(ld)}</script>')
+                extra_head=f'<script type="application/ld+json">{json.dumps(ld)}</script>\n{AOS_HEAD}')
 
 
 # ---------------------------------------------------------------- news
